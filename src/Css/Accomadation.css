@@ -1,0 +1,106 @@
+/* .accom{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(248, 236, 221);
+}
+.a-img{
+   
+    width: 350px;
+
+    height: 200px;
+}
+.a-cont{
+    width: 350px;
+    height: 150px;
+    border: 2px solid rgb(196, 181, 85);
+    margin-top: 10px;
+    color:  rgb(76, 45, 4);
+}
+.accom-main-main{
+    display: flex;
+    justify-content: space-around;
+}
+.bb-img{
+    width: 100%;
+    height: 100%;
+}
+ */
+
+
+
+ .accom {
+    width: 100%;
+  
+    background-color: rgb(248, 236, 221);
+    padding-top: 100px;
+}
+
+.a-img {
+    width: 350px;
+    height: 200px;
+    object-fit: cover; /* Ensures the image fits well */
+}
+
+.a-cont {
+    width: 350px;
+    height: 150px;
+    border: 2px solid rgb(196, 181, 85);
+    margin-top: 10px;
+    color: rgb(76, 45, 4);
+    padding: 10px; /* Added padding for spacing */
+    box-sizing: border-box; /* Includes padding in width/height */
+}
+
+.accom-main-main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    gap: 20px; /* Adds space between items */
+    margin-top: 30px;
+}
+
+.bb-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+}
+
+/* Media Query for tablets and smaller screens */
+@media (max-width: 768px) {
+    .a-img, .a-cont {
+        width: 80%; /* Reduces width on tablets */
+        margin: 10px auto; /* Centers the content */
+    }
+
+    .accom-main-main {
+        flex-direction: column; /* Stacks elements vertically */
+        align-items: center; /* Centers the items */
+    }
+
+    .a-cont {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+/* Media Query for small mobile phones */
+@media (max-width: 480px) {
+    .a-img, .a-cont {
+        width: 90%; /* Makes the image and container take up more width */
+        margin: 10px auto;
+    }
+
+    .accom-main-main {
+        flex-direction: column; /* Stacks elements vertically */
+        align-items: center; /* Centers the items */
+    }
+
+    .a-cont {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .accom {
+        height: auto; /* Allows the container to adjust to content height */
+    }
+}

@@ -1,0 +1,70 @@
+.we{
+    width: 100%;
+    background-color: rgb(248, 236, 221);
+    padding-top: 110px;
+    
+}
+
+.villa-img{
+   
+    width: 290px;
+    height: 300px;
+}
+.vill-con{
+   
+    width: 220px;
+    height: 130px;
+    color:  rgb(76, 45, 4);
+    
+}
+.aa{
+    width: 100%;
+   
+    border-top-left-radius: 100px; /* Higher curve */
+    border-top-right-radius: 100px; /* Higher curve */
+    object-fit: cover;
+
+}
+.villa-main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    
+}
+
+
+@media (max-width: 768px) {
+    .villa-img {
+        width: 50%; /* Makes the image take full width on smaller screens */
+        height: auto; /* Adjusts height to maintain aspect ratio */
+    }
+
+    .villa-main {
+        flex-direction: column; /* Stacks the elements vertically on tablets */
+        align-items: center; /* Centers the items */
+    }
+
+    .vill-con {
+        width: 80%; /* Makes the container width 80% on smaller screens */
+        margin: 10px auto; /* Centers the container */
+    }
+}
+
+/* Media Query for smaller mobile screens */
+@media (max-width: 480px) {
+    .villa-img {
+        width: 100%; /* Full width on mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .villa-main {
+        flex-direction: column; /* Stacks the elements vertically */
+        align-items: center; /* Centers the items */
+    }
+
+    .vill-con {
+        width: 90%; /* Makes the container width 90% */
+        margin: 10px auto; /* Centers the container */
+    }
+
+}

@@ -1,0 +1,124 @@
+/* General footer styles */
+.footter {
+    display: flex;
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+    width: 100%;
+    background-color: bisque;
+    padding: 20px 10px;
+}
+
+.footer1 {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+#iconf {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+.ft {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 30px;
+    font-size: 2rem; /* Adjust font size for responsiveness */
+}
+
+.gridf {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on larger screens */
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.gridf1 {
+    height: auto;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.item {
+    display: block;
+    color: black;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Icons style */
+.icons {
+    font-size: 2.4rem;
+    color: brown;
+    cursor: pointer;
+    display: none;
+}
+
+/* Media Queries for responsive design */
+
+/* Tablet and larger mobile screens (≥ 768px) */
+@media screen and (max-width: 1024px) {
+    .footer1 {
+        width: 100%;
+    }
+
+    .gridf {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+
+    .ft {
+        font-size: 1.6rem; /* Slightly smaller font size for tablets */
+    }
+
+    #iconf a {
+        font-size: 2rem; /* Adjust icon size */
+    }
+}
+
+/* Mobile phones and smaller screens (≤ 768px) */
+@media screen and (max-width: 768px) {
+    .gridf {
+        grid-template-columns: 1fr; /* 1 column layout on small screens */
+    }
+
+    .ft {
+        font-size: 1.4rem; /* Adjust font size for mobile */
+        padding-top: 20px;
+    }
+
+    .item {
+        font-size: 1.1rem; /* Slightly larger text on mobile for readability */
+    }
+
+    #iconf {
+        gap: 20px; /* Increase gap between social icons */
+    }
+
+    #iconf a {
+        font-size: 2rem; /* Adjust icon size for mobile screens */
+    }
+}
+
+/* Extra small screens (≤ 480px) */
+@media screen and (max-width: 480px) {
+    .ft {
+        font-size: 1.2rem; /* Further reduce font size for very small screens */
+    }
+
+    .item {
+        font-size: 1rem; /* Adjust item font size */
+    }
+
+    #iconf a {
+        font-size: 1.8rem; /* Adjust icon size for very small screens */
+    }
+}

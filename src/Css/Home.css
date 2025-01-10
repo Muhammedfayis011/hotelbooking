@@ -1,0 +1,102 @@
+.main{
+    width: 100%;
+    
+   background-image: url("https://img.freepik.com/free-photo/extravagant-pool-party-luxurious-mansion-complete-with-vip-cabanas-dj-booth_1268-31125.jpg?t=st=1736350341~exp=1736353941~hmac=ece065ceda8052129786fbf23ae03f04c6effb151d213e337b80ea4c6f849761&w=996");
+   background-size: cover;
+   color: white;
+   
+   
+   
+}
+.sub-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.welcome{
+    margin-top: 160px;
+    font-family: "DM Serif Text", serif;
+    
+}
+.main-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-size: 100px;
+}
+.main-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: "DM Serif Text", serif;
+}
+.main-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-main{
+    padding: 5px 30px;
+    text-decoration: none;
+    background-color: #FFF;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .main-head {
+        font-size: 80px;
+    }
+
+    .main-two {
+        font-size: 40px;
+    }
+
+    .btn-main {
+        padding: 12px 25px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-head {
+        font-size: 60px;
+    }
+
+    .main-two {
+        font-size: 30px;
+    }
+
+    .btn-main {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .welcome {
+        margin-top: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-head {
+        font-size: 40px;
+    }
+
+    .main-two {
+        font-size: 25px;
+    }
+
+    .btn-main {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .welcome {
+        margin-top: 80px;
+    }
+}
