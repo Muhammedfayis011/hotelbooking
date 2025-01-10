@@ -1,6 +1,6 @@
 
 import React from 'react'
-import '../Css/welcome.css'
+import '../Css/Welcome.css'
 
 const Welcome = () => {
     return (
